@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.notificationengine.todoapp.domain">
+
+    <class name="CompletedTask" table="COMPLETED_TASK">
+        <id name="id" type="integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+
+        <property name="name" type="string">
+            <column name="NAME" length="255" not-null="true" />
+        </property>
+
+        <property name="completedAt" type="timestamp">
+            <column name="COMPLETED_AT" not-null="true"/>
+        </property>
+
+    </class>
+
+</hibernate-mapping>
