@@ -2,6 +2,7 @@ package com.notificationengine.todoapp.domain;
 
 
 import org.apache.log4j.Logger;
+import org.joda.time.LocalDate;
 
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -59,11 +60,13 @@ public class Task implements Serializable {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Task{");
-        sb.append("id=").append(id);
-        sb.append(", name='").append(name).append('\'');
-        sb.append(", createdAt=").append(createdAt);
-        sb.append('}');
+
+        LocalDate jodaCreatedAt = new LocalDate(this.createdAt.getTime());
+
+        final StringBuilder sb = new StringBuilder("Task: ");
+        sb.append(name);
+        sb.append(" created on ").append(jodaCreatedAt.toString());
+        sb.append("\n");
         return sb.toString();
     }
 }

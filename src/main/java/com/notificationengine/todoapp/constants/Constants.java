@@ -15,8 +15,22 @@ public class Constants {
 
     public static final String TASK = "task";
 
+    public static final String COMPLETED_TASKS = "completedTasks";
+
     public static final String TASKS = "tasks";
 
-    public static final String COMPLETED_TASKS = "completedTasks";
+    public static final String CONTEXT = "context";
+
+    public static final String CONTENT = "content";
+
+    public static final String SUBJECT = "subject";
+
+    public static final String TOPIC = "topic";
+
+    public static final String SERVER_URL = "server.url";
+
+    public static final String TASKS_FILE = "tasks.file";
+
+    public static final String RAW_NOTIFICATION = "rawNotification.do";
 
 }

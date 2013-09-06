@@ -69,7 +69,30 @@
             </form:form>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <p>
+                <a class="btn btn-primary" href="export-list" onClick="alertExport();">Export list of tasks</a>
+            </p>
+        </div>
+        <div class="col-xs-6">
+            <p>
+                <a class="btn btn-primary" href="do-push" onClick="alertPush();">Do a push</a>
+            </p>
+        </div>
+    </div>
 </div>
+
+<script>
+    function alertOK() {
+        alert("The list of tasks has been created in /Users/Matthis/Desktop/tasks.txt");
+    }
+
+    function alertOK() {
+        alert("A push notification has been sent");
+    }
+</script>
 
 
 </body>
