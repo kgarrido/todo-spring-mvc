@@ -6,8 +6,8 @@
 <head>
 	<title>Todo Notifications App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='<c:url value="resources/css/bootstrap.min.css" />' media="screen">
-    <link rel="stylesheet" href='<c:url value="resources/css/bootstrap-theme.min.css" />' media="screen">
+    <link rel="stylesheet" href='<c:url value="/resources/css/bootstrap.min.css" />' media="screen">
+    <link rel="stylesheet" href='<c:url value="/resources/css/bootstrap-theme.min.css" />' media="screen">
 
 
 </head>
@@ -89,7 +89,7 @@
         alert("The list of tasks has been created in /Users/Matthis/Desktop/tasks.txt");
     }
 
-    function alertOK() {
+    function alertPush() {
         alert("A push notification has been sent");
     }
 </script>

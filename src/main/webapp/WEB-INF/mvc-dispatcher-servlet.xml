@@ -54,8 +54,9 @@
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.show_sql">true</prop>
-                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
-                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+                <prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop>
             </props>
         </property>
     </bean>
