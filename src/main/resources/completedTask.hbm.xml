@@ -7,7 +7,7 @@
     <class name="CompletedTask" table="COMPLETED_TASK">
         <id name="id" type="integer">
             <column name="ID" />
-            <generator class="identity" />
+            <generator class="native" />
         </id>
 
         <property name="name" type="string">

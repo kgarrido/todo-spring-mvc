@@ -131,7 +131,7 @@ public class MainController implements Serializable {
 
         JSONObject toBeSent = new JSONObject();
 
-        toBeSent.put(Constants.TOPIC, "facturation.societe2");
+        toBeSent.put(Constants.TOPIC, "todoApp");
 
         JSONObject context = new JSONObject();
         context.put(Constants.SUBJECT, "Notification from TodoApp");
