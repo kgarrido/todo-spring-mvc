@@ -85,7 +85,7 @@
 </div>
 
 <script>
-    function alertOK() {
+    function alertExport() {
         alert("The list of tasks has been created in /Users/Matthis/Desktop/tasks.txt");
     }
 
